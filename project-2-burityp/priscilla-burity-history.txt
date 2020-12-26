@@ -1,0 +1,110 @@
+    1  mkdir w205
+    2  cd w205/
+    3  mkdir project2
+    4  cd project2/
+    5  git clone https://github.com/mids-w205-schioberg/project-2-burityp.git
+    6  git clone https://github.com/mids-w205-schioberg/project-2-burityp.git
+    7  cd..
+    8  git clone https://github.com/mids-w205-schioberg/project-2-burityp.git
+    9  cd ..
+   10  cd w205
+   11  docker ps
+   12  docker ps
+   13  docker stop redis_a
+   14  cd w205
+   15  git clone https://github.com/mids-w205-schioberg/project-2-burityp.git
+   16  git clone https://github.com/mids-w205-schioberg/course-content.git
+   17  clear
+   18  docker ps
+   19  docker run redis
+   20  docker run -d --name redis_a redis
+   21  docker stop redis_a
+   22  docker run redis --name redis -p 6379:6379 redis
+   23  docker run -d --name redis -p 6379:6379 redis
+   24  docker ps
+   25  mkdir redis_standalone
+   26  cd redis_standalone/
+   27  cp ../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+   28  ls
+   29  vim docker-compose.yml 
+   30  clear
+   31  sudo apt update
+   32  sudo apt docker compose
+   33  sudo apt install docker compose
+   34  sudo apt install docker-compose
+   35  docker-compose up -d
+   36  docker-compose up -d
+   37  docker-compose up -d
+   38  sudo apt install docker-compose^C
+   39  docker-compose up -d
+   40  docker ps
+   41  docker-compose ps
+   42  docker-compose up 
+   43  docker-compose up -d
+   44  sudo apt install docker-compose
+   45  docker-compose up -d
+   46  docker stop
+   47  docker stop
+   48  docker stop redis
+   49  docker stop redis_1
+   50  docker run -d --name redis -p 6379:6379 redis
+   51  docker kill redis
+   52  docker run -d --name redis_1 -p 6379:6379 redis
+   53  docker ps
+   54  docker-compose up -d
+   55  docker ps
+   56  docker stop redis redis_1
+   57  docker ps
+   58  history > history.txt
+   59  docker run redis
+   60  docker run -d redis
+   61  docker ps
+   62  docker run -d --name redis redis
+   63  docker remove redis
+   64  docker run --help
+   65  docker remove redis
+   66  docker run -d --name redis redis
+   67  docker container rm redis
+   68  docker run -d --name redis redis
+   69  docker run -d --name redis -p 6379:6379 redis
+   70  docker rm redis
+   71  docker stop redis
+   72  docker rm redis
+   73  docker run -d --name redis -p 6379:6379 redis
+   74  docker-compose up -d
+   75  docker-compose down
+   76  docker-compose up -d
+   77  docker-compose down
+   78  docker-compose down -d
+   79  docker-compose up -d
+   80  docker rm -fv $(docker ps -aq)
+   81  cd w205/project-2-burityp/
+   82  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+   83  docker-compose up -d
+   84  docker-compose logs -f kafka
+   85  docker-compose exec cloudera hadoop fs -ls /tmp/
+   86  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   87  docker-compose exec mids bash -c "cat /w205/project-2-burityp/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c "
+   88  cd ~/w205/project-2-burityp
+   89  docker-compose down
+   90  cd ..
+   91  mkdir ~/w205/flask-with-kafka-and-spark/
+   92  cd ~/w205/flask-with-kafka-and-spark/
+   93  cp ~/w205/course-content/10-Transforming-Streaming-Data/docker-compose.yml .
+   94  docker-compose up -d
+   95  cp ../course-content/09-Ingesting-Data/basic_game_api.py 
+   96  cp ../course-content/09-Ingesting-Data/basic_game_api.py .
+   97* docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/game_api_with_json_events.py flas
+   98  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/game_api_with_json_events.py flask run
+   99  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/basic_game_api.py flask run
+  100  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/basic_game_api.py flask run
+  101  cd ~/w205/project-2-burityp
+  102  cp -r ~/w205/spark-with-kafka-and-hdfs/docker-compose.yml ~/w205/project-2-burityp
+  103  docker-compose up -d
+  104  docker-compose logs -f kafka
+  105  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  106  docker-compose exec mids bash -c "cat /w205/project-2-burityp/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  107  docker-compose exec spark pyspark
+  108  history > priscilla-burity-history
+  109  history > priscilla-burity-history.txt
+  110  history > priscilla-burity-history.txt
